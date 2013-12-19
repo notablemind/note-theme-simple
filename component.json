@@ -1,0 +1,13 @@
+{
+  "name": "note-theme-simple",
+  "repo": "notablemind/note-theme-simple",
+  "description": "A simple theme for the note component",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "styles": [
+    "note-theme-simple.css"
+  ]
+}
