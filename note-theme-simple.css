@@ -1,3 +1,15 @@
+.note-simple-theme.note {
+  display: flex;
+}
+.note-simple-theme.note input.body {
+  flex: 1;
+  border: none;
+  border-bottom: 1px dashed white;
+}
+.note-simple-theme.note input.body:focus {
+  border-bottom-color: #777;
+  outline: none;
+}
 .note-simple-theme.note .dropicon .list {
   border: 1px solid #ccc;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -16,10 +28,12 @@
 }
 .note-simple-theme.note .dropicon .head > * {
   padding: 5px;
+  font-size: 10px;
 }
 .note-simple-theme.note .dropicon li > * {
   padding: 5px 10px 5px 5px;
 }
+.note-simple-theme.note .dropicon li.selected > *,
 .note-simple-theme.note .dropicon li > *:hover {
   background-color: #acf;
 }

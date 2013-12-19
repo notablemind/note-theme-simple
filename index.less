@@ -1,8 +1,21 @@
 
 @hover-color: #e0f0ff;
 @border-radius: 5px;
+@border-color: #ccc;
 
 .note-simple-theme.note {
+  display: flex;
+
+  input.body {
+    flex: 1;
+    border: none;
+    border-bottom: 1px dashed white;
+
+    &:focus {
+      border-bottom-color: #777;
+      outline: none;
+    }
+  }
   .dropicon {
 
     .list {
@@ -26,11 +39,13 @@
 
     .head > * {
       padding: 5px;
+      font-size: 10px;
     }
     li > * {
       padding: 5px 10px 5px 5px;
     }
 
+    li.selected > *,
     li > *:hover {
       background-color: #acf;
     }
