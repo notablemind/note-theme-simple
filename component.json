@@ -4,10 +4,14 @@
   "description": "A simple theme for the note component",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "notablemind/tags-theme-simple": "*",
+    "notablemind/dropicon-simple": "*"
+  },
   "development": {},
   "license": "MIT",
   "styles": [
     "note-theme-simple.css"
-  ]
+  ],
+  "remotes": []
 }
