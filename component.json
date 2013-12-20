@@ -5,8 +5,7 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "notablemind/tags-theme-simple": "*",
-    "notablemind/dropicon-simple": "*"
+    "notablemind/tags-theme-simple": "*"
   },
   "development": {},
   "license": "MIT",

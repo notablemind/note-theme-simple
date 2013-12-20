@@ -3,8 +3,56 @@
 @border-radius: 5px;
 @border-color: #ccc;
 
-.note-simple-theme.note {
+.tree {
+  .tree-node {
+    &.open > .head > .expander {
+      visibility: hidden;
+    }
+    &.closed > .head {
+      > .expander {
+        color: #777;
+      }
+      &:hover {
+        > .expander {
+          color: black;
+        }
+      }
+    }
+
+    &.open > .head > .expander:before {
+      content: "\f068";
+    }
+    &.closed > .head > .expander:before {
+      content: "\f067";
+    }
+    
+    > .head {
+      display: flex;
+
+      > .expander {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        padding-top: 3px;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+    }
+    &.open > .head {
+      &:hover > .expander {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.simple-theme.note {
   display: flex;
+  flex: 1;
 
   input.body {
     flex: 1;

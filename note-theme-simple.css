@@ -1,39 +1,72 @@
-.note-simple-theme.note {
+.tree .tree-node.open > .head > .expander {
+  visibility: hidden;
+}
+.tree .tree-node.closed > .head > .expander {
+  color: #777;
+}
+.tree .tree-node.closed > .head:hover > .expander {
+  color: black;
+}
+.tree .tree-node.open > .head > .expander:before {
+  content: "\f068";
+}
+.tree .tree-node.closed > .head > .expander:before {
+  content: "\f067";
+}
+.tree .tree-node > .head {
   display: flex;
 }
-.note-simple-theme.note input.body {
+.tree .tree-node > .head > .expander {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  padding-top: 3px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.tree .tree-node.open > .head:hover > .expander {
+  visibility: visible;
+}
+.simple-theme.note {
+  display: flex;
+  flex: 1;
+}
+.simple-theme.note input.body {
   flex: 1;
   border: none;
   border-bottom: 1px dashed white;
 }
-.note-simple-theme.note input.body:focus {
+.simple-theme.note input.body:focus {
   border-bottom-color: #777;
   outline: none;
 }
-.note-simple-theme.note .dropicon .list {
+.simple-theme.note .dropicon .list {
   border: 1px solid #ccc;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 }
-.note-simple-theme.note .dropicon .list li::first-child {
+.simple-theme.note .dropicon .list li::first-child {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.note-simple-theme.note .dropicon .list li::last-child {
+.simple-theme.note .dropicon .list li::last-child {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.note-simple-theme.note .dropicon i {
+.simple-theme.note .dropicon i {
   margin-right: 3px;
 }
-.note-simple-theme.note .dropicon .head > * {
+.simple-theme.note .dropicon .head > * {
   padding: 5px;
   font-size: 10px;
 }
-.note-simple-theme.note .dropicon li > * {
+.simple-theme.note .dropicon li > * {
   padding: 5px 10px 5px 5px;
 }
-.note-simple-theme.note .dropicon li.selected > *,
-.note-simple-theme.note .dropicon li > *:hover {
+.simple-theme.note .dropicon li.selected > *,
+.simple-theme.note .dropicon li > *:hover {
   background-color: #acf;
 }
