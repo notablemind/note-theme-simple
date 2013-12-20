@@ -1,12 +1,6 @@
 .tree .tree-node.open > .head > .expander {
   visibility: hidden;
 }
-.tree .tree-node.closed > .head > .expander {
-  color: #777;
-}
-.tree .tree-node.closed > .head:hover > .expander {
-  color: black;
-}
 .tree .tree-node.open > .head > .expander:before {
   content: "\f068";
 }
@@ -15,6 +9,29 @@
 }
 .tree .tree-node > .head {
   display: flex;
+}
+.tree .tree-node > .head > .jumpto {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  padding-top: 3px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-right: 5px;
+  visibility: hidden;
+  color: #777;
+}
+.tree .tree-node > .head > .jumpto:hover {
+  color: black;
+}
+.tree .tree-node > .head > .jumpto:before {
+  content: "\f101";
+}
+.tree .tree-node > .head:hover > .jumpto {
+  visibility: visible;
 }
 .tree .tree-node > .head > .expander {
   display: inline-block;
@@ -26,6 +43,10 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #777;
+}
+.tree .tree-node > .head > .expander:hover {
+  color: black;
 }
 .tree .tree-node.open > .head:hover > .expander {
   visibility: visible;

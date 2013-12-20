@@ -8,16 +8,6 @@
     &.open > .head > .expander {
       visibility: hidden;
     }
-    &.closed > .head {
-      > .expander {
-        color: #777;
-      }
-      &:hover {
-        > .expander {
-          color: black;
-        }
-      }
-    }
 
     &.open > .head > .expander:before {
       content: "\f068";
@@ -29,6 +19,33 @@
     > .head {
       display: flex;
 
+      > .jumpto {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        padding-top: 3px;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding-right: 5px;
+        visibility: hidden;
+        color: #777;
+
+        &:hover {
+          color: black;
+        }
+
+        &:before {
+          content: "\f101";
+        }
+      }
+
+      &:hover > .jumpto {
+        visibility: visible;
+      }
+
       > .expander {
         display: inline-block;
         font-family: FontAwesome;
@@ -39,6 +56,11 @@
         line-height: 1;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        color: #777;
+
+        &:hover {
+          color: black;
+        }
       }
 
     }
