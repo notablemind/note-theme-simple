@@ -55,12 +55,12 @@
   display: flex;
   flex: 1;
 }
-.simple-theme.note input.body {
+.simple-theme.note textarea.body {
   flex: 1;
   border: none;
   border-bottom: 1px dashed white;
 }
-.simple-theme.note input.body:focus {
+.simple-theme.note textarea.body:focus {
   border-bottom-color: #777;
   outline: none;
 }

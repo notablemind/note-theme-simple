@@ -1,5 +1,5 @@
 
-build: components note-theme-simple.css
+build: note-theme-simple.css components
 	@component build --dev
 
 note-theme-simple.css: index.less
