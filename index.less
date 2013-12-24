@@ -76,8 +76,11 @@
   display: flex;
   flex: 1;
 
+  .body input,
+  .body textarea,
+  .body .shadow,
+  input.body,
   textarea.body {
-    flex: 1;
     border: none;
     border-bottom: 1px dashed white;
 
@@ -86,6 +89,28 @@
       outline: none;
     }
   }
+  .body input,
+  .body.input {
+    height: 1em;
+  }
+  > .body.input-head {
+    flex: 1;
+  }
+
+  .body.scripture-input {
+    display: flex;
+    flex: 1;
+
+    .scripture-reference {
+      width: 80px;
+      vertical-align: top;
+    }
+    .scripture-text {
+      flex: 1
+    }
+  }
+
+
   .dropicon {
 
     .list {

@@ -55,14 +55,39 @@
   display: flex;
   flex: 1;
 }
+.simple-theme.note .body input,
+.simple-theme.note .body textarea,
+.simple-theme.note .body .shadow,
+.simple-theme.note input.body,
 .simple-theme.note textarea.body {
-  flex: 1;
   border: none;
   border-bottom: 1px dashed white;
 }
+.simple-theme.note .body input:focus,
+.simple-theme.note .body textarea:focus,
+.simple-theme.note .body .shadow:focus,
+.simple-theme.note input.body:focus,
 .simple-theme.note textarea.body:focus {
   border-bottom-color: #777;
   outline: none;
+}
+.simple-theme.note .body input,
+.simple-theme.note .body.input {
+  height: 1em;
+}
+.simple-theme.note > .body.input-head {
+  flex: 1;
+}
+.simple-theme.note .body.scripture-input {
+  display: flex;
+  flex: 1;
+}
+.simple-theme.note .body.scripture-input .scripture-reference {
+  width: 80px;
+  vertical-align: top;
+}
+.simple-theme.note .body.scripture-input .scripture-text {
+  flex: 1;
 }
 .simple-theme.note .dropicon .list {
   border: 1px solid #ccc;
